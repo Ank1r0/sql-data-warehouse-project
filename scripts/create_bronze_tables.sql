@@ -39,27 +39,27 @@ sls_quantity INT,
 sls_price	INT
 );
 
-if OBJECT_ID('bronze.erm_cust_az12','U') is not null
-	drop table bronze.erm_cust_az12;
+if OBJECT_ID('bronze.erp_cust_az12','U') is not null
+	drop table bronze.erp_cust_az12;
 
-create table bronze.erm_cust_az12 (
+create table bronze.erp_cust_az12 (
 cid		NVARCHAR (50),
 bdate	DATE,
 gen		NVARCHAR (50)
 );
 
-if OBJECT_ID('bronze.erm_loc_a101','U') is not null
-	drop table bronze.erm_loc_a101;
+if OBJECT_ID('bronze.erp_loc_a101','U') is not null
+	drop table bronze.erp_loc_a101;
 
-create table bronze.erm_loc_a101 (
+create table bronze.erp_loc_a101 (
 cid		NVARCHAR (50),
 cntry	NVARCHAR (50)
 );
 
-if OBJECT_ID('bronze.erm_px_cat_g1v2','U') is not null
-	drop table bronze.erm_px_cat_g1v2;
+if OBJECT_ID('bronze.erp_px_cat_g1v2','U') is not null
+	drop table bronze.erp_px_cat_g1v2;
 
-create table bronze.erm_px_cat_g1v2(
+create table bronze.erp_px_cat_g1v2(
 id NVARCHAR (50),
 cat NVARCHAR (50),
 subcat NVARCHAR (50),
